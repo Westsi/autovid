@@ -1,0 +1,9 @@
+/venv
+.venv
+__pycache__
+client_secrets.json
+*.json
+*.mp4
+video.mp4
+!template_script_metadata.json
+*.png

@@ -1,0 +1,24 @@
+{
+    "sounds": {
+        "10": "boom",
+        "39": "boom",
+        "45": "boom"
+    },
+    "users":{
+        "beluwuwuga": {
+            "pfp": "1.png",
+            "rolecolour": "#cf330c"
+        },
+        "user2": {
+            "pfp": "5.png",
+            "rolecolour": "#2965d6"
+        }, 
+        "iamuwu":{
+            "pfp":"3.png",
+            "rolecolour":"#A020F0"
+        }
+    },
+    "links": {
+        "33":true
+    }
+}
