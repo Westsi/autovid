@@ -7,3 +7,6 @@ client_secrets.json
 video.mp4
 !template_script_metadata.json
 *.png
+!readme_images/Autovid-logos_black.png
+!readme_images/Autovid-transparent.png
+!readme_images/Autovid-white.png
