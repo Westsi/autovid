@@ -123,7 +123,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The `template_script.txt` and `template_script_metadata.json` files are templates for scripts. You can make your own, but if they are named differently then you will need to change the names of the files accessed in `main.py` lines `52` and `53`.
+The `template_script.txt` and `template_script_metadata.json` files are templates for scripts. You can make your own, but if they are named differently then you will need to change the names of the files accessed in `main.py` lines `52` and `53`. The indents for messages are unnecessary, but the line breaks between different users' messagess are very much necessary.
 
 ```python
 script = load_script("YOUR-SCRIPT.txt")
