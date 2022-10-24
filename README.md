@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Westsi/autovid">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="readme_images/Autovid-logos.jpeg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">AutoVid</h3>
@@ -64,7 +64,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="readme_images/Autovid-logos_black.png" alt="Logo" height=150>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -89,25 +89,32 @@ To get a local copy up and running follow these simple example steps.
 This is an example of how to list things you need to use the software and how to install them.
 * [python 3](https://www.python.org/downloads/)
 * [ffmpeg](https://ffmpeg.org/download.html)
+* install packages from `requirements.txt`
   ```sh
-  npm install npm@latest -g
+  pip install -r requirements.txt
   ```
 
 ### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/Westsi/autovid.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+2. Enable the Youtube Data API at [Google Cloud Console](https://console.cloud.google.com/)
+
+3. Make an OAuth Consent screen with sensitive scope `./auth/youtube`.
+
+4. Create OAuth client ID credentials and paste them in a new file `client_secrets.json`. Don't worry, the `.gitignore` file will stop it from being uploaded.
+    ```json
+    {
+    "web": {
+        "client_id": "CLIENT-ID-HERE",
+        "client_secret": "CLIENT-SECRET-HERE",
+        "redirect_uris": [],
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token"
+        }
+    }
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,9 +123,15 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The `template_script.txt` and `template_script_metadata.json` files are templates for scripts. You can make your own, but if they are named differently then you will need to change the names of the files accessed in `main.py` lines `52` and `53`.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```python
+script = load_script("YOUR-SCRIPT.txt")
+script_json = load_script_json("YOUR-SCRIPT-METADATA.json")
+```
+
+Right now, there is only one sound type - `boom`. Notification sounds wil automatically play on a new message. There are 6 profile pictures in `/pfp` but you can add your own. The default folder for profile pictures is `/pfp`. The `links` section in `template_script_metadata.json` only needs to be filled out for those messages that should be links. All others will default to being `false`. Remember that JSON `true` and `false` are lowercase, while Python's are uppercase.
+<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,10 +140,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Other Video Types
+- [ ] Custom Errors
+- [ ] Other Sounds
 
 See the [open issues](https://github.com/Westsi/autovid/issues) for a full list of proposed features (and known issues).
 
@@ -179,9 +191,8 @@ Project Link: [https://github.com/Westsi/autovid](https://github.com/Westsi/auto
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Westsi](https://westsi.pages.dev)
+* [yokharian for Discord Message Generation Code](https://github.com/yokharian/ImageDis)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
