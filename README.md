@@ -28,6 +28,8 @@
     <a href="https://github.com/Westsi/autovid/issues">Report Bug</a>
     ·
     <a href="https://github.com/Westsi/autovid/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/users/Westsi/projects/1">Planned Changes, Features and Enhancements</a>
   </p>
 </div>
 
@@ -144,7 +146,7 @@ Right now, there is only one sound type - `boom`. Notification sounds wil automa
 - [ ] Custom Errors
 - [ ] Other Sounds
 
-See the [open issues](https://github.com/Westsi/autovid/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Westsi/autovid/issues) for a full list of proposed features (and known issues). Also see [the feature board](https://github.com/users/Westsi/projects/1/views/1) for planned changes, features and enhancements.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +182,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - westsi@protonmail.com
+Westsi - westsi@protonmail.com
 
 Project Link: [https://github.com/Westsi/autovid](https://github.com/Westsi/autovid)
 
