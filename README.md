@@ -28,6 +28,8 @@
     <a href="https://github.com/Westsi/autovid/issues">Report Bug</a>
     ·
     <a href="https://github.com/Westsi/autovid/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/users/Westsi/projects/1">Planned Changes, Features and Enhancements</a>
   </p>
 </div>
 
@@ -119,7 +121,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The `template_script.txt` and `template_script_metadata.json` files are templates for scripts. You can make your own, but if they are named differently then you will need to change the names of the files accessed in `main.py` lines `52` and `53`.
+The `template_script.txt` and `template_script_metadata.json` files are templates for scripts. You can make your own, but if they are named differently then you will need to change the names of the files accessed in `main.py` lines `52` and `53`. The indents for messages are unnecessary, but the line breaks between different users' messagess are very much necessary.
 
 ```python
 script = load_script("YOUR-SCRIPT.txt")
@@ -140,7 +142,7 @@ Right now, there is only one sound type - `boom`. Notification sounds wil automa
 - [ ] Custom Errors
 - [ ] Other Sounds
 
-See the [open issues](https://github.com/Westsi/autovid/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Westsi/autovid/issues) for a full list of proposed features (and known issues). Also see [the feature board](https://github.com/users/Westsi/projects/1/views/1) for planned changes, features and enhancements.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +178,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - westsi@protonmail.com
+Westsi - westsi@protonmail.com
 
 Project Link: [https://github.com/Westsi/autovid](https://github.com/Westsi/autovid)
 

@@ -63,8 +63,8 @@ movie.CreateMP4(script_parsed, moral, users, script_json, file_list)
 video_data = {
             "file": "video.mp4",
             "title": f"{moral} - Discord Storytime!",
-            "description": "Discord Video with funny morals and plots\nby Funny Memer",
+            "description": "Discord Video with funny morals and plots\nby CHANNEL NAME",
             "keywords":"posts,discord,compilation,memes,morals,soyousee",
-            "privacyStatus":"private"
+            "privacyStatus":"public"
     }
 upload_video(video_data)
